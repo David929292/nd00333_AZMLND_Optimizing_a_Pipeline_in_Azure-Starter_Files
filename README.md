@@ -62,7 +62,7 @@
 
 ## Pipeline comparison
 - With some surprise, the automated model did not perform significantly better than the simple  hypertuned approach
-- Comparing the two approaches, this is remarkable given that the automated approach applies a host of models including some preprocessing and feature engineering. On the other hand, the hypertuned model only applies a GLM relying on a logistic distribution - albeit constrained. Personally, I'd expected for the AML to perform significantly better than the basline-logit as it utilizes more advanced techniques based on Gradient Boosting, Tree Algorithms and Ensembling.  
+- Comparing the two approaches, this is remarkable given that the automated approach applies a host of models including some preprocessing and feature engineering. On the other hand, the hypertuned model only applies a GLM relying on a logistic distribution - albeit constrained. Personally, I'd expected for the AML to perform significantly better than the baseline-logit as it utilizes more advanced techniques based on Gradient Boosting, Tree Algorithms and Ensembling.  
 - Quantitavely speaking, the logistic regression returned an accuracy of .9112 on test data, whereas the best performing AZ AML approach of using a Voting Ensemble of algorithms proved to be .9175 accurate
 
 ## Future work
