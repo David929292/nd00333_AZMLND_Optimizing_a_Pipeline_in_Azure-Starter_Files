@@ -66,13 +66,13 @@
 - Quantitavely speaking, the logistic regression returned an accuracy of .9112 on test data, whereas the best performing AZ AML approach of using a Voting Ensemble of algorithms proved to be .9177 accurate
     - To judge the AML model a little closer, see the following annotated images:
         - As mentioned, the best performing algorithm given by AZ AML in terms of accuracy was an Ensembling method.
-        ![Ensemble Methods](./AML/AML_sorted.png?raw=true)
+        ![Ensemble Methods](/AML/AML_sorted.png)
         - In total, the ensemble was made up of 10 algorithms. The incorporated algorithms made use of 2 established scaling techniques as well as varrying estimation techniques ranging from GLM over Tree based algorithms to Boosted methods. A discussion of all of these would be out of the scope of this short documentation, however,the following image provides a quick overview: 
-        ![Ensemble Details](./AML/AML_ensembling_details.png?raw=true)
+        ![Ensemble Details](/AML/AML_ensembling_details.png)
         - Regarding the metrics of the AML model, the confusion table sheds more light on the reliability of the accuracy measure:
-        ![AML Confusion Table](./AML/AML_confusion_table.png?raw=true)
+        ![AML Confusion Table](/AML/AML_confusion_table.png)
             - While the high accuracy of over 90% suggest a very reliable classification estimation, the false positive/negative estimations demand closer attention. This is corroberated by the presence of a majority class, which can also be seen in the balanced accuracy. Significantly lower than the "unbalanced" accuracy, imbalanced training classes hence effectively render out of sample predictions less reliable.
-            ![AML Accuracy](./AML/AML_balanced_acc.png?raw=true)
+            ![AML Accuracy](/AML/AML_balanced_acc.png)
             
 ## Future work
 - Not only could you infer imbalance from the metrics provided by AZ AML, AZ AML also prompted a warning in relation to class imbalance when spinning up the AML command
